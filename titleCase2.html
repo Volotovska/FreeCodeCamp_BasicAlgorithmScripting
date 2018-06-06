@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Функции в JavaScript</title>
+
+    <script type="text/javascript">
+    function titleCase(str) {
+        var arr = str.split(' ');
+        var result = [];
+        for(i=0;i<arr.length;i++){
+        	result.push(arr[i][0].toUpperCase()+arr[i].toLowerCase().slice(1));
+        }
+        return result.join(' ');
+        }
+        console.log(titleCase("I'm a little tea pot"));
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

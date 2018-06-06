@@ -1,0 +1,28 @@
+
+<html>
+<head>
+    <title>Функции в JavaScript</title>
+
+    <script type="text/javascript">
+      function frankenSplice(arr1, arr2, n) {
+        var res1 = arr2.slice(0,n);
+        var res2 =arr2.slice(n);
+        console.log(res2);
+        var intermediate = res1.concat(arr1);
+        console.log(intermediate);
+        var final = intermediate.concat(res2);
+        console.log(final);
+        return final;
+      }
+
+      frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+    </script>
+
+</head>
+<body>
+
+    <!-- Разметка страници -->
+
+</body>
+</html>

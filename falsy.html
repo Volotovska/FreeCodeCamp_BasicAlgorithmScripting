@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Функции в JavaScript</title>
+
+    <script type="text/javascript">
+
+  function bouncer(arr) {
+    var newArr = [];
+    newArr = arr.filter(function(value){
+      return Boolean(value) === true;
+    })
+      console.log(newArr);
+      return newArr;
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

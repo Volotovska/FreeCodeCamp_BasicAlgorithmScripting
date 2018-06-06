@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Функции в JavaScript</title>
+
+    <script type="text/javascript">
+	function palindrome(str) {
+	
+  var re = /[\W_]/g; 
+  var lowRegStr = str.toLowerCase().replace(re, '');
+  var reverseStr = lowRegStr.split('').reverse().join(''); 
+      if(reverseStr === lowRegStr){
+	  return true;
+      }
+      else
+        return false;
+	}
+	
+	var res=palindrome("not a palindrome");
+	console.log(res);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
